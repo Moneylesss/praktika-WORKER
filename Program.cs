@@ -7,11 +7,9 @@ class Program
     {
         List<Worker> workers = new List<Worker>();
         
-        // Ввод количества работников
         Console.Write("Введите количество работников: ");
         int n = int.Parse(Console.ReadLine());
         
-        // Заполнение списка
         for (int i = 0; i < n; i++)
         {
             Worker worker = new Worker();
@@ -19,11 +17,9 @@ class Program
             workers.Add(worker);
         }
         
-        // Ввод минимального стажа
         Console.Write("Введите минимальный стаж работы: ");
         int minExperience = int.Parse(Console.ReadLine());
         
-        // Поиск работников с нужным стажем
         bool found = false;
         foreach (var worker in workers)
         {
